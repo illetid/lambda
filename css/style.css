@@ -58,7 +58,6 @@ textarea {
 	padding-right: 40px;
 }
 .ba-intro {
-	padding-top:1px;
 	background: url(../img/intro.jpg) 50% no-repeat;
 	background-size: cover;
 }
@@ -68,32 +67,32 @@ textarea {
 	width: 100%;
 }
 
-.ba-menu {
+.ba-nav-menu {
 	list-style: none;
 	margin: 0;
 }
-.ba-menu__item {
+.ba-nav-menu__item {
 	display: inline-block;
 	margin: 0;
-	padding-top: 46px;
-	padding-bottom: 37px;
 	font-family: 'Gentium Book Basic',sans-serif;
 	color:  #ffffff;
 	font-size: 21px;
 	font-weight: 700;
 	margin-left: 45px;
 }
-.ba-menu__item a {
+.ba-nav-menu__item a {
 	text-decoration: none;
 	color: #FFF;
 	display: block;
 	position: relative;
+	padding-top: 46px;
+	padding-bottom: 37px;
 }
-.ba-menu__item:first-child {
+.ba-nav-menu__item:first-child {
 	margin: 0;
 }
 
-.ba-menu a {
+.ba-nav-menu a {
 	font-family: 'Gentium Book Basic', sans-serif;
 	color:  #ffffff;
 	font-size: 21px;
@@ -103,17 +102,18 @@ textarea {
 	display: block;
 	position: relative;
 }
-.ba-menu a:before {
+.ba-nav-menu a:before {
 	display: block;
 	content: '';
 	position: absolute;
 	height: 3px;
+	top: 0;
 	width: 100%;
 	background-color: rgba(255,255,255,.7);
 	opacity: 0;
 	transition: opacity .3s ease-in;
 }
-.ba-menu a:hover:before {
+.ba-nav-menu a:hover:before {
 	opacity: 1;
 }
 .ba-header-soc {
@@ -142,8 +142,7 @@ textarea {
 
 	max-width: 970px;
 	margin: 0 auto;
-	margin-top: 120px;
-	padding-top: 120px;
+	padding-top: 220px;
 	padding-bottom: 120px;
 }
 .ba-intro__title {
@@ -165,7 +164,7 @@ font-weight: 400;
 border-width: 1px;
 line-height: 55px;
 height: 55px;
-margin-right: 30px;
+    margin: 0 15px 0;
 padding: 0 50px;
 text-decoration: none;
 }
@@ -185,6 +184,12 @@ background-color:rgba(255, 255, 255, 0.28);
 opacity: 0.7;
 
 }
+.ba-button-intro--black:hover {
+	color: #FBE423;
+}
+.ba-button-intro--white:hover {
+	color:#1B4836;
+}
 .ba-about {
 	background:
 	 linear-gradient(-45deg, rgba(0,0,0,.15), transparent),
@@ -200,6 +205,9 @@ line-height: 24px;
 }
 .ba-about-text {
 	max-width: 430px;
+}
+.ba-about-text img {
+	padding-left: 60px;
 }
 .ba-about__title {
 	font-family: 'Yeseva One';
@@ -234,4 +242,259 @@ font-size: 36px;
 font-weight: 400;
 padding-bottom: 65px;
 background: url(../img/Divider3.png) 50% 100% no-repeat;
+}
+
+.ba-ingredients__img {
+	display: inline-block;
+	margin: 0 10px 0;
+}
+.ba-menu {
+	background: url(../img/menu-bg.jpg) 50% np-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+.ba-menu-block {
+	max-width: 460px;
+	margin-left: 60px;
+}
+.ba-menu-block + .ba-menu-block {
+	margin-top: 50px;
+}
+.ba-menu-block__title {
+	font-family: "Yeseva One", sans-serif;
+	color: #cc9900;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 1;
+	padding-bottom: 40px;
+	background: url(../img/Divider2.png) 50% 100% no-repeat;
+	margin: 0;
+}
+.ba-menu-block__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ba-menu-block__list > li {
+	margin-top: 15px;
+	padding: 5px 15px 5px;
+}
+.ba-menu-block__list > li:first-child {
+	padding-top: 15px;
+}
+.ba-menu-block__special {
+	border: 1px solid rgba(200, 159, 45, .3);
+	position: relative;
+	margin-top: 22px;
+}
+.ba-menu-block__special:before {
+	content: 'Special';
+	display: block;
+	position: absolute;
+	top: -22px;
+	right: 0;
+	text-align: center;
+	background-color: rgba(200, 159, 45, .7);
+	font-family: 'Lato';
+	color: #f8fafa;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.71;
+	width: 69px;
+	height: 22px;
+}
+
+.ba-menu-block__item__description {
+	margin: 9px 0 ;
+}
+.ba-menu-block__item {
+	border-bottom: 1px solid rgba(200, 159, 45, .3);
+	padding-bottom: 7px;
+	font-family: "Yeseva One", sans-serif;
+	color: #c89f2d;
+	font-size: 21px;
+	line-height: 1.14;
+}
+.ba-menu-item__name {
+	margin: 0;
+	float: left;
+	font-weight: 400;
+}
+.ba-menu-item__price {
+	float: right;
+}
+.ba-review {
+	background: url(../img/revew-bg.jpg) 50% no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+.ba-review-block {
+
+	background: rgba(0,0,0,0.67);
+	padding: 75px 70px;
+	margin: 0 auto;
+	max-width: 770px;
+
+}
+.ba-review-text {
+color:  #dee0e0;
+font-size: 25px;
+font-family: 'Gentium Book Basic';
+font-weight: 700;
+line-height: 45px;
+}
+.ba-review__title {
+	font-family: 'Yeseva One';
+color:  #ffffff;
+font-size: 36px;
+font-weight: 400;
+padding-bottom: 65px;
+background: url(../img/Divider3.png) 50% 100% no-repeat;
+}
+.ba-reviwer {
+	font-family: Lato;
+color:  #ffffff;
+font-size: 18px;
+font-weight: 400;
+line-height: 45px;
+text-align: center;
+}
+.ba-review__item {
+	position: relative;
+}
+.ba-review__item:before {
+	content: '“';
+	font-family:'Georgia',sans-serif ;
+	font-size: 96px;
+	position: absolute;
+	display: block;
+	top: -10px;
+	left: -30px;
+	color: #FFF;
+}
+.ba-reservation {
+	background: url(../img/reserv-gb.jpg) 50% no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+
+.ba-reservation__img {
+	margin-right: 10px;
+}
+.ba-reservation-text {
+	font-family: Lato;
+color:  #4c4c4c;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+.ba-reservation__title {
+font-family: 'Yeseva One';
+color:  #cc9900;
+font-size: 36px;
+font-weight: 400;
+padding-bottom: 65px;
+background: url(../img/Divider2.png) 50% 100% no-repeat;
+}
+.ba-form {
+	max-width: 430px;
+	margin-top: 28px;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+}
+.ba-form label {
+	display: block;
+	color:  #c9a131;
+	font-size: 16px;
+	text-align: left;
+}
+.ba-form-field {
+	display: block;
+	margin-top: 7px;
+	padding: 5px 15px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.ba-form-field:focus {
+	outline: none;
+	border: 1px solid #c9a131;
+}
+.ba-form-select {
+	color:  #B1A9B1;
+	padding: 7px 15px;
+	margin-top: 9px;
+	font-size: 14px;
+	width: 100%;
+}
+.ba-button--form {
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	background: #c89f2d;
+	margin-top: 18px;
+}
+
+.ba-button--form {
+		display: inline-block;
+	border-width: 1px;
+border-color:  #c89f2d;
+border-style: solid;
+background-color:  rgba(200, 159, 45, 0.98);
+padding: 0 60px;
+height: 34px;
+line-height: 34px;
+font-family: 'Open Sans';
+color:  #ffffff;
+font-size: 16px;
+}
+
+
+.ba-button--form:focus {
+	outline: none;
+}
+.ba-button--form:hover {
+	background-color:  rgba(200, 159, 45, 0.3);
+	color: #000;
+}
+.ba-footer {
+	background-color:  #191919;
+	padding: 50px 0;
+	font-family: 'Open Sans';
+color:  #ffffff;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+.ba-footer a {
+	text-decoration: none;
+	color: #FFF;
+}
+.ba-footer-about {
+	max-width: 380px;
+	text-align: center;
+}
+.ba-footer-opening {
+
+}
+.ba-footer-about__title,
+.ba-footer-opening__title,
+.ba-footer-location__title {
+	font-family: 'YesevaOne',sans-serif;
+color:  #fefefe;
+font-size: 21px;
+font-weight: 400;
+line-height: 24px;
+padding-bottom: 50px;
+background: url(../img/decoration-footer.png) 50% 100% no-repeat;
+}
+.ba-footer-opening p {
+	margin: 0;
+}
+.ba-footer-social__links {
+	padding-top: 45px;
+}
+.ba-footer-card__links {
+	margin-top: 45px;
+
 }
