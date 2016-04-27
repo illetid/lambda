@@ -387,7 +387,7 @@ text-align: center;
 }
 
 .ba-reservation__img {
-	display: block;
+	display: inline-block;
 	max-width: 100%;
 	margin-right: 10px;
 }
